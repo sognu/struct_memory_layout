@@ -1,0 +1,19 @@
+*************************************
+Examines the memory layout of structs
+*************************************
+
+
+Makefile	- For building and cleaning proxy
+README		- This file
+
+# Proxy source files
+struct.{c,h}	- Primary proxy code
+funcs.{h}	- Functions to implement
+main.{c}        - Unit tests
+
+To run:
+       make
+       ./struct
+
+
+*A discovery of this project was that bitfield structs may contain padding, and that the layout depended on the compiler(tested with gcc and clang).
